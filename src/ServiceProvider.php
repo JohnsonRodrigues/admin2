@@ -17,7 +17,7 @@ class ServiceProvider extends BaseServiceProvider
     public function register()
     {
         $this->app->singleton(Metronic2::class, function (Container $app) {
-            return new Metronic(
+            return new Metronic2(
                 $app['config']['metronic2.filters'],
                 $app['events'],
                 $app
