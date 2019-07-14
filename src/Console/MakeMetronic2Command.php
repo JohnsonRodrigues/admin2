@@ -11,12 +11,12 @@ class MakeMetronic2Command extends MakeAuthCommand
     protected $description = 'Scaffold basic Metronic2 login and registration views and routes';
 
     protected $metronicViews = [
-        'auth/clube/login.stub'           => 'auth/clube/login.blade.php',
-        'auth/clube/register.stub'        => 'auth/clube/register.blade.php',
-        'auth/clube/passwords/email.stub' => 'auth/clube/passwords/email.blade.php',
-        'auth/clube/passwords/reset.stub' => 'auth/clube/passwords/reset.blade.php',
-        'auth/clube/verify.stub'          => 'auth/clube/verify.blade.php',
-        'clube/home.stub'                 => 'clube/home.blade.php',
+        'auth/login.stub'           => 'auth/login.blade.php',
+        'auth/register.stub'        => 'auth/register.blade.php',
+        'auth/passwords/email.stub' => 'auth/passwords/email.blade.php',
+        'auth/passwords/reset.stub' => 'auth/passwords/reset.blade.php',
+        'auth/verify.stub'          => 'auth/verify.blade.php',
+        'home.stub'                 => 'home.blade.php',
     ];
 
     protected function exportViews()
