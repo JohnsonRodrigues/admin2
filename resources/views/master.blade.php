@@ -40,7 +40,7 @@
     <!-- END THEME GLOBAL STYLES -->
 
 
-    @yield('metronic_css')
+    @yield('metronic2_css')
 
 
     <link rel="shortcut icon" href="favicon.ico"/>
@@ -76,7 +76,7 @@
 <!-- END THEME LAYOUT SCRIPTS -->
 
 
-@yield('metronic_js')
+@yield('metronic2_js')
 
 </body>
 </html>

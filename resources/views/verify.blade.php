@@ -1,7 +1,7 @@
 
 @extends('metronic2::master')
 
-@section('metronic_css')
+@section('metronic2_css')
     <!-- BEGIN PAGE LEVEL STYLES -->
     <link href="{{ asset('vendor/metronic2/pages/css/login.css')}}" rel="stylesheet" type="text/css"/>
     <!-- END PAGE LEVEL STYLES -->
@@ -42,7 +42,7 @@
 
 @stop
 
-@section('metronic_js')
+@section('metronic2_js')
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script src="{{ asset('vendor/metronic2/global/plugins/jquery-validation/js/jquery.validate.min.js')}}"
             type="text/javascript"></script>
