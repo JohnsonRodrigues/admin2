@@ -7,7 +7,7 @@
 2. [Updating](#2-updating)
 3. [Usage](#3-usage)
 4. [The `make:adminmetronic` artisan command](#4-the-makeadminlte-artisan-command)
-   1. [Using the authentication views without the `make:metronic` command](#41-using-the-authentication-views-without-the-makeadminlte-command)
+   1. [Using the authentication views without the `make:metronic2` command](#41-using-the-authentication-views-without-the-makeadminlte-command)
 5. [Configuration](#5-configuration)
    1. [Menu](#51-menu)
      - [Custom menu filters](#custom-menu-filters)
@@ -23,7 +23,7 @@
 1. Require the package using composer:
 
     ```
-    composer require i9code/laravelmetronic
+    composer require i9code/laravelmetronic2
     ```
 
 2. Add the service provider to the `providers` in `config/app.php`:
@@ -31,13 +31,13 @@
     > Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider
 
     ```php
-    I9code\LaravelMetronic\ServiceProvider::class,
+    I9code\laravelmetronic2\ServiceProvider::class,
     ```
 
 3. Publish the public assets:
 
     ```
-    php artisan vendor:publish --provider="I9code\LaravelMetronic\ServiceProvider" --tag=assets
+    php artisan vendor:publish --provider="I9code\laravelmetronic2\ServiceProvider" --tag=assets
     ```
 
 ## 2. Updating
@@ -45,18 +45,18 @@
 1. To update this package, first update the composer package:
 
     ```
-    composer update i9code/laravelmetronic
+    composer update i9code/laravelmetronic2
     ```
 
 2. Then, publish the public assets with the `--force` flag to overwrite existing files
 
     ```
-    php artisan vendor:publish --provider="I9code\LaravelMetronic\ServiceProvider" --tag=assets --force
+    php artisan vendor:publish --provider="I9code\laravelmetronic2\ServiceProvider" --tag=assets --force
     ```
 
 ## 3. Usage
 
-To use the template, create a blade file and extend the layout with `@extends('metronic::page')`.
+To use the template, create a blade file and extend the layout with `@extends('metronic2::page')`.
 This template yields the following sections:
 
 - `title`: for in the `<title>` tag
@@ -70,7 +70,7 @@ All sections are in fact optional. Your blade template could look like the follo
 ```html
 {{-- resources/views/admin/dashboard.blade.php --}}
 
-@extends('metronic::page')
+@extends('metronic2::page')
 
 @section('title', 'Dashboard')
 
@@ -103,37 +103,37 @@ Note that in Laravel 5.2 or higher you can also use `@stack` directive for `css`
 
 You now just return this view from your controller, as usual. Check out [AdminLTE](https://almsaeedstudio.com) to find out how to build beautiful content for your admin panel.
 
-## 4. The `make:metronic` artisan command
+## 4. The `make:metronic2` artisan command
 
 > Note: only for Laravel 5.2 and higher
 
-This package ships with a `make:metronic` command that behaves exactly like `make:auth` (introduced in Laravel 5.2) but replaces the authentication views with AdminLTE style views.
+This package ships with a `make:metronic2` command that behaves exactly like `make:auth` (introduced in Laravel 5.2) but replaces the authentication views with AdminLTE style views.
 
 ```
-php artisan make:metronic
+php artisan make:metronic2
 ```
 
 This command should be used on fresh applications, just like the `make:auth` command
 
-### 4.1 Using the authentication views without the `make:metronic` command
+### 4.1 Using the authentication views without the `make:metronic2` command
 
 If you want to use the included authentication related views manually, you can create the following files and only add one line to each file:
 
 - `resources/views/auth/login.blade.php`:
 ```
-@extends('metronic::login')
+@extends('metronic2::login')
 ```
 - `resources/views/auth/register.blade.php`
 ```
-@extends('metronic::register')
+@extends('metronic2::register')
 ```
 - `resources/views/auth/passwords/email.blade.php`
 ```
-@extends('metronic::passwords.email')
+@extends('metronic2::passwords.email')
 ```
 - `resources/views/auth/passwords/reset.blade.php`
 ```
-@extends('metronic::passwords.reset')
+@extends('metronic2::passwords.reset')
 ```
 
 By default, the login form contains a link to the registration form.
@@ -144,10 +144,10 @@ If you don't want a registration form, set the `register_url` setting to `null` 
 First, publish the configuration file:
 
 ```
-php artisan vendor:publish --provider="I9code\LaravelMetronic\ServiceProvider" --tag=config
+php artisan vendor:publish --provider="I9code\laravelmetronic2\ServiceProvider" --tag=config
 ```
 
-Now, edit `config/metronic.php` to configure the title, skin, menu, URLs etc. All configuration options are explained in the comments. However, I want to shed some light on the `menu` configuration.
+Now, edit `config/metronic2.php` to configure the title, skin, menu, URLs etc. All configuration options are explained in the comments. However, I want to shed some light on the `menu` configuration.
 
 ### 5.1 Menu
 
@@ -217,8 +217,8 @@ For example with Laratrust:
 
 namespace MyApp;
 
-use I9code\LaravelMetronic\Menu\Builder;
-use I9code\LaravelMetronic\Menu\Filters\FilterInterface;
+use I9code\laravelmetronic2\Menu\Builder;
+use I9code\laravelmetronic2\Menu\Filters\FilterInterface;
 use Laratrust;
 
 class MyMenuFilter implements FilterInterface
@@ -234,15 +234,15 @@ class MyMenuFilter implements FilterInterface
 }
 ```
 
-And then add to `config/metronic.php`:
+And then add to `config/metronic2.php`:
 
 ```php
 'filters' => [
-    I9code\LaravelMetronic\Menu\Filters\ActiveFilter::class,
-    I9code\LaravelMetronic\Menu\Filters\HrefFilter::class,
-    I9code\LaravelMetronic\Menu\Filters\SubmenuFilter::class,
-    I9code\LaravelMetronic\Menu\Filters\ClassesFilter::class,
-    //I9code\LaravelMetronic\Menu\Filters\GateFilter::class, Comment this line out
+    I9code\laravelmetronic2\Menu\Filters\ActiveFilter::class,
+    I9code\laravelmetronic2\Menu\Filters\HrefFilter::class,
+    I9code\laravelmetronic2\Menu\Filters\SubmenuFilter::class,
+    I9code\laravelmetronic2\Menu\Filters\ClassesFilter::class,
+    //I9code\laravelmetronic2\Menu\Filters\GateFilter::class, Comment this line out
     MyApp\MyMenuFilter::class,
 ]
 ```
@@ -258,7 +258,7 @@ To configure the menu at runtime, register a handler or callback for the `MenuBu
 
 ```php
 use Illuminate\Contracts\Events\Dispatcher;
-use I9code\LaravelMetronic\Events\BuildingMenu;
+use I9code\laravelmetronic2\Events\BuildingMenu;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -319,7 +319,7 @@ To override this behavior, you can specify an `active` parameter with an array o
 
 ### 5.2 Plugins
 
-By default the [DataTables](https://datatables.net/) plugin is supported. If set to `true`, the necessary javascript CDN script tags will automatically be injected into the `metronic::page.blade` file.
+By default the [DataTables](https://datatables.net/) plugin is supported. If set to `true`, the necessary javascript CDN script tags will automatically be injected into the `metronic2::page.blade` file.
 
 ```php
 'plugins' => [
@@ -327,7 +327,7 @@ By default the [DataTables](https://datatables.net/) plugin is supported. If set
 ]
 ```
 
-Also the [Select2](https://select2.github.io/) plugin is supported. If set to `true`, the necessary javascript CDN script tags will automatically be injected into the `metronic::page.blade` file.
+Also the [Select2](https://select2.github.io/) plugin is supported. If set to `true`, the necessary javascript CDN script tags will automatically be injected into the `metronic2::page.blade` file.
 
 ```php
 'plugins' => [
@@ -336,7 +336,7 @@ Also the [Select2](https://select2.github.io/) plugin is supported. If set to `t
 ]
 ```
 
-Also the [ChartJS](https://www.chartjs.org/) plugin is supported. If set to `true`, the necessary javascript CDN script tags will automatically be injected into the `metronic::page.blade` file.
+Also the [ChartJS](https://www.chartjs.org/) plugin is supported. If set to `true`, the necessary javascript CDN script tags will automatically be injected into the `metronic2::page.blade` file.
 
 ```php
 'plugins' => [
@@ -353,20 +353,20 @@ Just specifiy the language in `config/app.php`.
 If you need to modify the texts or add other languages, you can publish the language files:
 
 ```
-php artisan vendor:publish --provider="I9code\LaravelMetronic\ServiceProvider" --tag=translations
+php artisan vendor:publish --provider="I9code\laravelmetronic2\ServiceProvider" --tag=translations
 ```
 
-Now, you can edit translations or add languages in `resources/lang/vendor/metronic`.
+Now, you can edit translations or add languages in `resources/lang/vendor/metronic2`.
 
 ## 7. Customize views
 
 If you need full control over the provided views, you can publish them:
 
 ```
-php artisan vendor:publish --provider="I9code\LaravelMetronic\ServiceProvider" --tag=views
+php artisan vendor:publish --provider="I9code\laravelmetronic2\ServiceProvider" --tag=views
 ```
 
-Now, you can edit the views in `resources/views/vendor/metronic`.
+Now, you can edit the views in `resources/views/vendor/metronic2`.
 
 ## 8. Issues, Questions and Pull Requests
 
