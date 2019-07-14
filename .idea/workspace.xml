@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="015e42bb-6418-46cc-99a9-9377a73f59d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/login.stub" afterPath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/clube/login.stub" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/passwords/email.stub" afterPath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/clube/passwords/email.stub" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/passwords/reset.stub" afterPath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/clube/passwords/reset.stub" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/register.stub" afterPath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/clube/register.stub" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/verify.stub" afterPath="$PROJECT_DIR$/src/Console/stubs/make/views/auth/clube/verify.stub" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Console/stubs/make/views/home.stub" afterPath="$PROJECT_DIR$/src/Console/stubs/make/views/clube/home.stub" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Console/MakeMetronic2Command.php" afterPath="$PROJECT_DIR$/src/Console/MakeMetronic2Command.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Console/Metronic2MakeCommand.php" afterPath="$PROJECT_DIR$/src/Console/Metronic2MakeCommand.php" />
     </list>
@@ -19,17 +24,17 @@
         <entry file="file://$PROJECT_DIR$/src/Console/MakeMetronic2Command.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+              <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Metronic2MakeCommand.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Metronic2MakeCommand.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Console/Metronic2MakeCommand.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+              <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -55,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceProvider.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ServiceProvider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-566">
+            <state relative-caret-position="680">
               <caret line="48" column="21" lean-forward="false" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
               <folding />
             </state>
@@ -73,8 +78,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Console/MakeMetronic2Command.php" />
         <option value="$PROJECT_DIR$/src/Console/Metronic2MakeCommand.php" />
+        <option value="$PROJECT_DIR$/src/Console/MakeMetronic2Command.php" />
       </list>
     </option>
   </component>
@@ -145,6 +150,50 @@
               <item name="metronic2" type="b2602c69:ProjectViewProjectNode" />
               <item name="metronic2" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="stubs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="metronic2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="metronic2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="stubs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="make" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="metronic2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="metronic2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="stubs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="make" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="metronic2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="metronic2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="stubs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="make" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="metronic2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="metronic2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="stubs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="make" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="clube" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="metronic2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="metronic2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Events" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -161,6 +210,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\I9code\Package\i9codePackage\modules\metronic2\src\Console\stubs\make\views\clube" />
       <recent name="C:\xampp\htdocs\I9code\Package\i9codePackage\modules\metronic2\src\Console\stubs\make\views\auth\clube" />
     </key>
   </component>
@@ -186,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563137853083</updated>
-      <workItem from="1563137854245" duration="306000" />
+      <workItem from="1563137854245" duration="1384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306000" />
+    <option name="totallyTimeSpent" value="1384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -227,26 +277,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Console/stubs/make/views/auth/passwords/email.stub">
+    <entry file="file://$PROJECT_DIR$/src/Console/stubs/make/views/auth/clube/passwords/email.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Console/MakeMetronic2Command.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Console/Metronic2MakeCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -269,8 +303,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-566">
+        <state relative-caret-position="680">
           <caret line="48" column="21" lean-forward="false" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Console/MakeMetronic2Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Console/Metronic2MakeCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
           <folding />
         </state>
       </provider>
